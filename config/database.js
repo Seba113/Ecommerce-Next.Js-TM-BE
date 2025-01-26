@@ -28,8 +28,8 @@ module.exports = ({ env }) => {
         host: env('DATABASE_HOST', '172.20.64.1'),
         port: env.int('DATABASE_PORT', 5432),
         database: env('DATABASE_NAME', 'ecommerce-tm'),
-        user: env('DATABASE_USERNAME', ''),
-        password: env('DATABASE_PASSWORD', ''),
+        user: env('DATABASE_USERNAME', 'postgres'),
+        password: env('DATABASE_PASSWORD', 'Sebastian113.fs'),
         ssl: env.bool('DATABASE_SSL', false) && {
           key: env('DATABASE_SSL_KEY', undefined),
           cert: env('DATABASE_SSL_CERT', undefined),
@@ -40,7 +40,7 @@ module.exports = ({ env }) => {
         },
         schema: env('DATABASE_SCHEMA', 'public'),
       },
-      pool: { min: env.int('DATABASE_POOL_MIN', 2), max: env.int('DATABASE_POOL_MAX', 15) },
+      pool: { min: env.int('DATABASE_POOL_MIN', 2), max: env.int('DATABASE_POOL_MAX', 10) },
     },
     sqlite: {
       connection: {
