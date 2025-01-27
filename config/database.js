@@ -25,9 +25,9 @@ module.exports = ({ env }) => {
     postgres: {
       connection: {
         connectionString: env('DATABASE_URL'),
-        host: env('DATABASE_HOST', '172.20.64.1'),
+        host: env('DATABASE_HOST', 'localhost'),
         port: env.int('DATABASE_PORT', 5432),
-        database: env('DATABASE_NAME', 'ecommerce-tm'),
+        database: env('DATABASE_NAME', 'postgres'),
         user: env('DATABASE_USERNAME', 'postgres'),
         password: env('DATABASE_PASSWORD', 'Sebastian113.fs'),
         ssl: env.bool('DATABASE_SSL', false) && {
