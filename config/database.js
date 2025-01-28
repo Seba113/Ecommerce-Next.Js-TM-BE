@@ -25,8 +25,8 @@ module.exports = ({ env }) => {
     postgres: {
       connection: {
         connectionString: env('DATABASE_URL'),
-        host: env('DATABASE_HOST', ' tcp://0.tcp.sa.ngrok.io'),
-        port: env.int('DATABASE_PORT', 10395),
+        host: env('DATABASE_HOST', '0.tcp.sa.ngrok.io'),
+        port: env.int('DATABASE_PORT', 15991 ),
         database: env('DATABASE_NAME', 'postgres'),
         user: env('DATABASE_USERNAME', 'postgres'),
         password: env('DATABASE_PASSWORD', 'Sebastian113.fs'),
