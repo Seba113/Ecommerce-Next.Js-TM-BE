@@ -25,7 +25,7 @@ module.exports = ({ env }) => {
     postgres: {
       connection: {
         connectionString: env('DATABASE_URL'),
-        host: env('DATABASE_HOST', '0.tcp.sa.ngrok.io'),
+        host: env('DATABASE_HOST', 'db.womrnqmqbhczjgmyiiye.supabase.co'),
         port: env.int('DATABASE_PORT', 15991 ),
         database: env('DATABASE_NAME', 'postgres'),
         user: env('DATABASE_USERNAME', 'postgres'),
