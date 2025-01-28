@@ -25,10 +25,10 @@ module.exports = ({ env }) => {
     postgres: {
       connection: {
         connectionString: env('DATABASE_URL'),
-        host: env('DATABASE_HOST', 'db.womrnqmqbhczjgmyiiye.supabase.co'),
+        host: env('DATABASE_HOST', 'aws-0-us-west-1.pooler.supabase.com'),
         port: env.int('DATABASE_PORT', 5432),
         database: env('DATABASE_NAME', 'postgres'),
-        user: env('DATABASE_USERNAME', 'postgres'),
+        user: env('DATABASE_USERNAME', 'postgres.womrnqmqbhczjgmyiiye'),
         password: env('DATABASE_PASSWORD', 'Sebastian113.fs'),
         ssl:{rejectUnauthorized: false},
         schema: env('DATABASE_SCHEMA', 'public'),
